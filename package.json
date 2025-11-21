@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite --host :: --port 3000",
     "build": "node generate-static-files.js && vite build",
-    "preview": "vite preview --host :: --port 3000"
+    "preview": "vite preview --host :: --port 3000",
+    "validate": "node tools/validate.js"
   },
   "dependencies": {
     "@emotion/is-prop-valid": "^1.2.1",
