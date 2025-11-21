@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+/* To use Minion Pro, you would typically include it via Adobe Fonts or self-host it. */
+/* Example for self-hosting (assuming you have the font files):
+@font-face {
+  font-family: 'Minion Pro';
+  src: url('/fonts/MinionPro-Regular.woff2') format('woff2'),
+       url('/fonts/MinionPro-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Minion Pro';
+  src: url('/fonts/MinionPro-Semibold.woff2') format('woff2'),
+       url('/fonts/MinionPro-Semibold.woff') format('woff');
+  font-weight: 600; // Semibold
+  font-style: normal;
+}
+*/
+
+    @tailwind base;
+    @tailwind components;
+    @tailwind utilities;
+
+    @layer base {
+      :root {
+        --background: 0 0% 100%; /* #FFFFFF */
+        --foreground: 222.2 84% 4.9%; /* Default foreground, will be overridden by brand-text */
+
+        --card: 0 0% 100%; /* #FFFFFF */
+        --card-foreground: 222.2 84% 4.9%; /* Default foreground */
+     
+        --popover: 0 0% 100%; /* #FFFFFF */
+        --popover-foreground: 222.2 84% 4.9%; /* Default foreground */
+     
+        --primary: 75 19% 69%; /* #A8AE70 */
+        --primary-foreground: 0 0% 100%; /* #FFFFFF */
+     
+        --secondary: 48 25% 90%; /* #E8E7E1 */
+        --secondary-foreground: 222.2 47.4% 11.2%; /* Default foreground */
+     
+        --muted: 48 25% 90%; /* #E8E7E1 */
+        --muted-foreground: 222.2 8.6% 40.8%; /* Default foreground */
+     
+        --accent: 75 19% 69%; /* #A8AE70 */
+        --accent-foreground: 222.2 47.4% 11.2%; /* Default foreground */
+     
+        --destructive: 0 84.2% 60.2%;
+        --destructive-foreground: 60 9.1% 97.8%;
+
+        --border: 48 25% 90%; /* #E8E7E1 */
+        --input: 48 25% 90%; /* #E8E7E1 */
+        --ring: 75 19% 69%; /* #A8AE70 */
+     
+        --radius: 0.5rem;
+      }
+     
+      .dark {
+        --background: 222.2 84% 4.9%;
+        --foreground: 60 9.1% 97.8%;
+     
+        --card: 222.2 84% 4.9%;
+        --card-foreground: 60 9.1% 97.8%;
+     
+        --popover: 222.2 84% 4.9%;
+        --popover-foreground: 60 9.1% 97.8%;
+     
+        --primary: 95 34% 53%;
+        --primary-foreground: 0 0% 100%;
+     
+        --secondary: 217.2 32.6% 17.5%;
+        --secondary-foreground: 60 9.1% 97.8%;
+     
+        --muted: 217.2 32.6% 17.5%;
+        --muted-foreground: 215 20.2% 65.1%;
+     
+        --accent: 217.2 32.6% 17.5%;
+        --accent-foreground: 60 9.1% 97.8%;
+     
+        --destructive: 0 62.8% 30.6%;
+        --destructive-foreground: 60 9.1% 97.8%;
+     
+        --border: 217.2 32.6% 17.5%;
+        --input: 217.2 32.6% 17.5%;
+        --ring: 95 34% 53%;
+      }
+    }
+     
+    @layer base {
+      * {
+        @apply border-border;
+      }
+      body {
+        @apply bg-brand-background text-brand-text font-minion-pro; /* Apply Minion Pro to body */
+        @apply antialiased;
+      }
+
+      /* Apply semibold to headings */
+      h1, h2, h3, h4, h5, h6 {
+        @apply font-semibold;
+      }
+    }

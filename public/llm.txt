@@ -1,0 +1,52 @@
+Minnetonka Animal Hospital - Site Documentation
+Generated: 2025-11-21T18:01:37.781Z
+URL: https://minnetonkaanimal.com
+
+## Site Overview
+Minnetonka Animal Hospital provides personalized, compassionate veterinary care. 
+The website is a single-page application (SPA) built with React, Vite, and TailwindCSS.
+
+## Contact Information
+- Address: 17408 Minnetonka Blvd, Minnetonka, MN 55345
+- Phone: 952.473.1239
+- Email: info@minnetonkaanimal.com
+- Hours: Mon-Fri 8am-5pm, Sat-Sun Closed
+
+## Site Structure & Routes
+- Route: /
+  Name: Home
+  Description: Main landing page with overview of services and philosophy
+
+- Route: /about
+  Name: About Us
+  Description: History, mission, and hospital information
+
+- Route: /services
+  Name: Services
+  Description: Comprehensive veterinary services list
+
+- Route: /services/integrative-medicine
+  Name: Integrative Medicine
+  Description: Acupuncture, laser therapy, and holistic treatments
+
+- Route: /about/meet-the-team
+  Name: Our Team
+  Description: Profiles of veterinarians and staff
+
+- Route: /new-clients
+  Name: New Clients
+  Description: Information for new patients and forms
+
+- Route: /about/pet-resources
+  Name: Pet Resources
+  Description: Educational materials and helpful links
+
+- Route: /contact
+  Name: Contact
+  Description: Location, hours, and contact form
+
+## Technical Stack
+- Framework: React 18
+- Build Tool: Vite
+- Styling: TailwindCSS + shadcn/ui
+- Routing: React Router 6
